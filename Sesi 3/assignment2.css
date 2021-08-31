@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+#jumbo{
+    background-color: lightgrey;
+}
+
+img{
+    height: 175px;
+}
