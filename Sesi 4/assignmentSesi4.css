@@ -1,0 +1,16 @@
+.img-size {
+  width: 39% !important;
+}
+
+nav {
+  width: 39% !important;
+  height: 55px !important;
+}
+
+@media (min-width: 1200px) {
+  #smallcard {
+    position: absolute;
+    right: 5%;
+    top: 24%;
+  }
+}
