@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 3</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assignment3.css" />
+  </head>
+
+  <script src="assignment3.js"></script>
+
+  <body>
+    <nav>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">HOME</a></li>
+        <li class="active"><a href="#">PRODUCT</a></li>
+        <li class="active"><a href="#">GALLERY</a></li>
+        <li class="active"><a href="#">BLOG</a></li>
+        <li class="active"><a href="#">MY INVENTORY</a></li>
+      </ul>
+    </nav>
+
+    <div class="profile">
+      <img src="logo.png" alt="logo" />
+
+      <div class="profilec">
+        <p id="pavail">Full Time</p>
+        <p id="pusia">21</p>
+        <p id="plokasi">Purwokerto, Indonesia</p>
+        <p id="pexp">2</p>
+        <p id="pemail">farrelkumara4@gmail.com</p>
+      </div>
+
+      <div class="profileb">
+        <p><b>Availability</b></p>
+        <p><b>Usia</b></p>
+        <p><b>Lokasi</b></p>
+        <p><b>Pengalaman</b></p>
+        <p><b>Email</b></p>
+      </div>
+
+      <div class="profilea">
+        <h1><b id="pnama">Johanes Elian Farrel Kumara</b></h1>
+        <p id="prole">Front End Designer</p>
+        <button class="btn edit btnprofile" onclick="TampilkanData()">
+          Edit
+        </button>
+        <button class="btn resume btnprofile">Resume</button>
+      </div>
+    </div>
+
+    <div class="formulir">
+      <form id="form" action="#">
+        <label for="nama"
+          >Nama
+          <input id="nama" type="text" name="nama" />
+        </label>
+
+        <label for="role"
+          >Role
+          <input id="role" type="text" name="role" />
+        </label>
+
+        <label for="availability"
+          >Availability
+          <input id="availability" type="text" name="availability" />
+        </label>
+
+        <label for="age"
+          >Age
+          <input id="age" type="text" name="age" />
+        </label>
+
+        <label for="lokasi"
+          >Lokasi
+          <input id="lokasi" type="text" name="lokasi" />
+        </label>
+
+        <label for="experience"
+          >Years Experience
+          <input id="experience" type="text" name="experience" />
+        </label>
+
+        <label for="email"
+          >Email
+          <input id="email" type="text" name="email" />
+        </label>
+
+        <button type="button" id="btnSubmit" class="btn" onclick="SimpanForm()">
+          SUBMIT
+        </button>
+      </form>
+    </div>
+    <script type="text/javascript">
+      function loadData() {
+        var nama = document.getElementById("pnama");
+        var role = document.getElementById("prole");
+        var availability = document.getElementById("pavail");
+        var age = document.getElementById("pusia");
+        var lokasi = document.getElementById("plokasi");
+        var experience = document.getElementById("pexp");
+        var email = document.getElementById("pemail");
+        nama.innerHTML =
+          localStorage.getItem("nama") != undefined
+            ? localStorage.getItem("nama")
+            : "Johanes Elian Farrel Kumara";
+        role.innerHTML =
+          localStorage.getItem("role") != undefined
+            ? localStorage.getItem("role")
+            : "Front End Designer";
+        availability.innerHTML =
+          localStorage.getItem("avail") != undefined
+            ? localStorage.getItem("avail")
+            : "Full Time";
+        age.innerHTML =
+          localStorage.getItem("usia") != undefined
+            ? localStorage.getItem("usia")
+            : "21";
+        lokasi.innerHTML =
+          localStorage.getItem("lokasi") != undefined
+            ? localStorage.getItem("lokasi")
+            : "Purwokerto, Indonesia";
+        experience.innerHTML =
+          localStorage.getItem("exp") != undefined
+            ? localStorage.getItem("exp")
+            : "2";
+        email.innerHTML =
+          localStorage.getItem("email") != undefined
+            ? localStorage.getItem("email")
+            : "farrelkumara4@gmail.com";
+      }
+      window.onload = loadData;
+    </script>
+  </body>
+</html>
