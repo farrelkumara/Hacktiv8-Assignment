@@ -1,0 +1,40 @@
+Pseudocode Luas_Keliling_Lingkaran
+
+STORE "R" with any value
+STORE "phi" with 3.14
+STORE "Luas" without any value
+STORE "Keliling" without any value
+
+CALCULATE "phi" times "R" times "R"
+SET "Luas" value with calculation result
+
+CALCULATE 2 times "phi" times "R"
+SET "Keliling" value with calculation result
+
+DISPLAY "Luas"
+DISPLAY "Keliling"
+
+================================================================================================================================
+
+Algoritma Luas_Keliling_Lingkaran
+
+Deklarasi : 
+siapkan variabel input R
+siapkan variabel phi yang sudah diisi dengan nilai 3.14
+siapkan variabel kosong untuk Luas
+siapkan variabel kosong untuk Keliling
+
+Input : 
+masukan nilai berupa angka berapapun ke dalam variabel result
+
+Proses : 
+menghitung luas lingkaran dengan cara mengkalikan phi dengan R dengan R lalu masukkan hasilnya ke dalam variabel Luas
+menghitung keliling lingkaran dengan cara mengkalikan 2 dengan phi dengan R lalu masukkan hasilnya ke dalam variabel Keliling
+
+Output : 
+mencetak variabel Luas
+mencetak variabel Keliling
+
+
+
+
