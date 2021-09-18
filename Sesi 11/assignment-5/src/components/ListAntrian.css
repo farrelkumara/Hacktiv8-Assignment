@@ -1,0 +1,16 @@
+.list {
+  text-align: center;
+  background-color: #ff6600;
+  color: white;
+  display: inline;
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.datalist {
+  display: inline;
+}
+
+span {
+  margin-right: 15px;
+}
